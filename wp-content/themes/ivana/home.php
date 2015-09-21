@@ -17,6 +17,8 @@ get_header(); ?>
             Te harum accumsan intellegebat qui, esse vero id vis, ius ea dicam officiis praesent. Dicunt detracto pertinax pri an. Ad dicta nullam docendi qui. Mei ignota dicunt complectitur ad. Velit inani comprehensam ad mel, autem iriure liberavisse eu eam.
         </p>
         
+        <?php include('inc/films.php') ?>
+        
 </main>
 
 <?php get_footer(); ?>

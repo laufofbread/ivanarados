@@ -530,30 +530,11 @@ a:active {
 .main-navigation ul {
 	display: none;
 	list-style: none;
-	margin: 0;
 	padding-left: 0;
 }
 
 .main-navigation a {
 	text-decoration: none;
-}
-
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 1.5em;
-	left: -999em;
-	z-index: 99999;
-}
-
-.main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
-}
-
-.main-navigation ul ul a {
-	width: 200px;
 }
 
 .main-navigation ul ul li {
@@ -902,12 +883,14 @@ a, a:visited {
 
 .logo {
     display:    inline-block;
+    margin: 20px 0;
 }
 
 .home-logo {
     background-color:   rgba(0,0,0,0.1);
     padding: 300px 40px 20px 40px;
     width:  100%;
+    max-width:  300px;
 }
 
 .logo img {
@@ -933,7 +916,20 @@ a, a:visited {
 }
 
 .menu {
-    border-top: 1px solid #dbdbdb;
+    margin: 50px 0 0 0;
+}
+
+.menu .sub-menu {
+    padding-left:   20px;
+    font-size:  0.9em;
+}
+
+.menu .sub-menu a {
+    padding-top:    0;
+}
+
+.menu .sub-menu li {
+    border: none;
 }
 
 .menu a {

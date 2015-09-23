@@ -591,30 +591,11 @@ a:active {
 .main-navigation ul {
 	display: none;
 	list-style: none;
-	margin: 0;
 	padding-left: 0;
 }
 
 .main-navigation a {
 	text-decoration: none;
-}
-
-.main-navigation ul ul {
-	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	float: left;
-	position: absolute;
-	top: 1.5em;
-	left: -999em;
-	z-index: 99999;
-}
-
-.main-navigation ul ul ul {
-	left: -999em;
-	top: 0;
-}
-
-.main-navigation ul ul a {
-	width: 200px;
 }
 
 .main-navigation ul ul li {
@@ -950,7 +931,7 @@ object {
 
 body {
     margin: 0 auto;
-    padding:    10px;
+    padding:    0 10px;
     font-family: 'Open Sans', sans-serif;
     color:  #333131;
     font-size:  18px;
@@ -963,6 +944,14 @@ a, a:visited {
 
 .logo {
     display:    inline-block;
+    margin: 20px 0;
+}
+
+.home-logo {
+    background-color:   rgba(0,0,0,0.1);
+    padding: 300px 40px 20px 40px;
+    width:  100%;
+    max-width:  300px;
 }
 
 .logo img {
@@ -976,8 +965,8 @@ a, a:visited {
     float:  right;
     background-color:   transparent;
     border-radius:  0;
-    margin-top: 15px;
-    border: 2px solid #f4f4f4;
+    margin: 10px 0;
+    border: 2px solid #f0f0f0;
     padding:    5px 20px;
     text-transform: uppercase;
     font-family:    'Open Sans';
@@ -988,7 +977,20 @@ a, a:visited {
 }
 
 .menu {
-    border-top: 1px solid #dbdbdb;
+    margin: 50px 0 0 0;
+}
+
+.menu .sub-menu {
+    padding-left:   20px;
+    font-size:  0.9em;
+}
+
+.menu .sub-menu a {
+    padding-top:    0;
+}
+
+.menu .sub-menu li {
+    border: none;
 }
 
 .menu a {
@@ -1001,25 +1003,33 @@ a, a:visited {
 }
 
 .home-bg-image {
-    background:   #f4f4f4 url('img/photo-1.jpg') no-repeat center center;
+    background:   #f4f4f4 url('img/photo-1.jpg') no-repeat bottom center;
     background-size:    cover;
-    padding:    5px;
 }
 
 .home-bg-image p {
     background-color:   rgba(219,219,219,0.7);
     padding:    20px;
-    margin: 0;
-/*    color:  #fff;*/
+    margin: 0 auto;
     line-height:    1.2;
-    text-shadow: 1px 1px 5px rgba(250,250,250, 0.5);;
+    text-shadow: 1px 1px 5px rgba(250,250,250, 0.5);
     text-align: justify;
-    font-size:  16px;
+    font-size:  18px;
+    max-width:  600px;
+    
+}
+
+.content p {
+    padding:    0 20px;
 }
 
 
 
 @media screen and (min-width: 680px) {
+    html, body {
+        height: 100%;
+    }
+    
     body {
         font-size:  16px;
     }
@@ -1037,5 +1047,14 @@ a, a:visited {
     .menu li {
         display:    inline-block;
         border: none;
+    }
+    
+    .home-bg-image {
+        height: 600px;
+        position:   relative;
+    }
+    
+    .home-bg-image p {
+        margin: 60px auto;
     }
 }

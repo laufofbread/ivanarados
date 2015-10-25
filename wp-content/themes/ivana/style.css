@@ -887,9 +887,10 @@ a, a:visited {
 }
 
 .home-logo {
-    background-color:   rgba(0,0,0,0.1);
+    background-color:   rgba(0,0,0,0.3);
     padding: 300px 40px 20px 40px;
     width:  100%;
+    height: 100%;
     max-width:  300px;
 }
 
@@ -942,20 +943,8 @@ a, a:visited {
 }
 
 .home-bg-image {
-    background:   #f4f4f4 url('img/photo-1.jpg') no-repeat bottom center;
+    background:   #f4f4f4 url('img/photo-1.jpg') no-repeat center left;
     background-size:    cover;
-}
-
-.home-bg-image p {
-    background-color:   rgba(219,219,219,0.7);
-    padding:    20px;
-    margin: 0 auto;
-    line-height:    1.2;
-    text-shadow: 1px 1px 5px rgba(250,250,250, 0.5);
-    text-align: justify;
-    font-size:  18px;
-    max-width:  600px;
-    
 }
 
 .content p {

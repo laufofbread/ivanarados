@@ -2,22 +2,16 @@
 layout: default
 ---
 
-<div class="home">
+<main class="home">
+    <div class="home-bg-image">
+        <div id="loading-background"></div>
+        
+        <p class="home-desc">  
+        Lorem ipsum dolor sit amet, nullam numquam dissentiet an nam, nam putant eleifend philosophia ut. Etiam everti iuvaret ex his, ex cum novum primis tractatos. Vivendo molestie delicatissimi nec ex. Deseruisse deterruisset cu usu. Ex vix diam adhuc tibique, et numquam dolorem scripserit mel.
 
-  <h1 class="page-heading">Posts</h1>
+        Te harum accumsan intellegebat qui, esse vero id vis, ius ea dicam officiis praesent. Dicunt detracto pertinax pri an. Ad dicta nullam docendi qui. Mei ignota dicunt complectitur ad. Velit inani comprehensam ad mel, autem iriure liberavisse eu eam.
+        </p>
+        
+    </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
-</div>
+</main>

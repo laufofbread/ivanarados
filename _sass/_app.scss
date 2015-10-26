@@ -1,0 +1,16 @@
+.home-bg-image {
+    background:   #f4f4f4 url('../img/photo-1.jpg') no-repeat center left;
+    @include bg-cover();
+    padding-bottom: 10%;
+    position:   relative;
+}
+
+#loading-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    background: #bbb;
+}

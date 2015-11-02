@@ -1,8 +1,19 @@
+html, body {
+    height: 100%;
+}
+
 .home-bg-image {
-    background:   #f4f4f4 url('../img/photo-1.jpg') no-repeat center left;
+    background:   #f4f4f4 url('../img/photo-1.jpg') no-repeat bottom left;
     @include bg-cover();
-    padding-bottom: 10%;
     position:   relative;
+    height: 70%;
+    height: calc(100% - 120px);
+}
+
+.home-desc {
+    @include bg-opacity($black, 0.2);
+    color:  $white;
+    padding:    $spacing-unit;
 }
 
 #loading-background {
@@ -13,4 +24,18 @@
     left: 0;
     z-index: 10;
     background: #bbb;
+}
+
+.logo {
+    svg {
+        width:  120px;
+        height: auto;
+    }
+}
+
+.wrapper, .home-bg-image {
+    @include media-query($on-palm) {
+        margin-left: $spacing-unit;
+        margin-right: $spacing-unit;
+    }
 }
